@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07110d">
+  <title>The Last Line — 07:42</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+
+  <header class="topbar">
+    <div class="brand">THE LAST LINE<span>°</span></div>
+    <div class="status"><i></i> SIGNAL LOST</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="scanline"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">ARCHIVE / 07 — ABANDONED TRANSIT</p>
+        <h1>The train<br><em>never</em> stopped.</h1>
+        <p class="intro">
+          Somewhere beyond the last station, the rails disappeared into the forest.
+          One carriage remained — waiting for a passenger who never came back.
+        </p>
+
+        <div class="actions">
+          <button id="enterBtn">ENTER THE CARRIAGE <span>↗</span></button>
+          <button id="storyBtn" class="ghost">READ THE LOG</button>
+        </div>
+      </div>
+
+      <div class="coordinates">
+        <span>41°43' N</span>
+        <span>44°47' E</span>
+        <span>LINE 00</span>
+      </div>
+
+      <div class="scroll-hint">
+        <span class="mouse"></span>
+        SCROLL TO EXPLORE
+      </div>
+    </section>
+
+    <section class="carriage" id="carriage">
+      <div class="section-label">01 / INSIDE</div>
+      <div class="carriage-grid">
+        <div>
+          <p class="eyebrow">RECOVERED AUDIO LOG</p>
+          <h2>07:42</h2>
+          <p class="large-text">
+            The doors are open.<br>
+            The forest is inside.
+          </p>
+          <p class="muted">
+            The carriage has been silent for years. Yet every morning at 07:42,
+            sunlight reaches the same seat, the same floor, the same forgotten rail.
+          </p>
+          <button class="signal-btn" id="signalBtn">PLAY SIGNAL <span>▶</span></button>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-top">
+            <span>TRAM_OS</span>
+            <span>NO CONNECTION</span>
+          </div>
+          <div class="terminal-screen" id="terminalScreen">
+            <p>> SYSTEM BOOT</p>
+            <p>> ROUTE: UNKNOWN</p>
+            <p>> PASSENGER: 01</p>
+            <p>> MEMORY: <span>73%</span></p>
+            <p>> SIGNAL: <span class="red">LOST</span></p>
+            <br>
+            <p class="cursor">_</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="log" id="log">
+      <div class="section-label">02 / THE LOG</div>
+      <div class="log-card">
+        <div class="log-number">07</div>
+        <div>
+          <p class="eyebrow">LAST RECORDED ENTRY</p>
+          <h2>“If you see the lights,<br>don't follow them.”</h2>
+          <p>
+            06:58 — Departure confirmed.<br>
+            07:16 — Route leaves mapped territory.<br>
+            07:31 — Trees visible through rear door.<br>
+            07:42 — Passenger reports a second carriage.<br>
+            07:43 — Recording ends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="final">
+      <div class="moon"></div>
+      <p class="eyebrow">END OF THE LINE</p>
+      <h2>Would you<br><em>get off?</em></h2>
+      <button id="choiceBtn">I WOULD STAY</button>
+      <p id="choiceText" class="choice-text"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>THE LAST LINE / 2026</span>
+    <span>AN EXPERIMENT IN MEMORY & MOTION</span>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-inner">
+      <button class="close" id="closeModal">×</button>
+      <p class="eyebrow">FIELD NOTE 07</p>
+      <h2>The passenger was never found.</h2>
+      <p>
+        Only the carriage remained. Moss covered the seats, leaves crossed the floor,
+        and sunlight slowly replaced the old electric lights. The line had become
+        part of the forest.
+      </p>
+      <div class="quote">“Some places don't disappear.<br>They simply become quiet.”</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
